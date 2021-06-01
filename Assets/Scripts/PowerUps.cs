@@ -1,10 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PowerUps : MonoBehaviour
-{
-
+public class PowerUps : MonoBehaviour {
     public bool doublePoints;
     public bool safeMode;
 
@@ -13,23 +9,15 @@ public class PowerUps : MonoBehaviour
     private PowerupManager thePowerupManager;
 
     // Start is called before the first frame update
-    void Start()
-    {
+    private void Start() {
         thePowerupManager = FindObjectOfType<PowerupManager>();
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    private void Update() { }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.name == "Player")
-        {
-            thePowerupManager.ActivatePowerup(doublePoints, safeMode, powerupLength);
-        }
+    private void OnTriggerEnter2D(Collider2D other) {
+        if (other.name == "Player") thePowerupManager.ActivatePowerup(doublePoints, safeMode, powerupLength);
         gameObject.SetActive(false);
     }
 }

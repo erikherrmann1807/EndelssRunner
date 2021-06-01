@@ -1828,7 +1828,6 @@ GameObject:
   - component: {fileID: 762556517}
   - component: {fileID: 762556516}
   - component: {fileID: 762556515}
-  - component: {fileID: 762556514}
   - component: {fileID: 762556513}
   m_Layer: 0
   m_Name: Powerup1
@@ -1836,7 +1835,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &762556513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1852,19 +1851,6 @@ MonoBehaviour:
   doublePoints: 1
   safeMode: 0
   powerupLength: 10
---- !u!114 &762556514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 762556512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36f84b4d5f27a6243b38787e8582c1d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  platformDestructionPoint: {fileID: 0}
 --- !u!58 &762556515
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2871,7 +2857,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1244539555
 MonoBehaviour:
   m_ObjectHideFlags: 0

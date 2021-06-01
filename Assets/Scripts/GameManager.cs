@@ -1,55 +1,31 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class GameManager : MonoBehaviour
-{
-
+public class GameManager : MonoBehaviour {
     public Transform platformGenerator;
-    private Vector3 platformStartPoint;
 
     public PlayerController thePlayer;
+
+    public DeathMenu theDeathScreen;
+    private Vector3 platformStartPoint;
     private Vector3 playerStartPoint;
 
     private PlatformDestroyer[] platformList;
 
     private ScoreManager theScoreManager;
 
-    public DeathMenu theDeathScreen;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        platformStartPoint = platformGenerator.position;
-        playerStartPoint = thePlayer.transform.position;
-
-        theScoreManager = FindObjectOfType<ScoreManager>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void RestartGame()
-    {
+    public void RestartGame() {
         theScoreManager.scoreIncreasing = false;
-        thePlayer.gameObject.SetActive(false); 
+        thePlayer.gameObject.SetActive(false);
 
         theDeathScreen.gameObject.SetActive(true);
 
         //StartCoroutine ("RestartGameCo");
     }
 
-    public void Reset()
-    {
+    public void Reset() {
         theDeathScreen.gameObject.SetActive(false);
         platformList = FindObjectsOfType<PlatformDestroyer>();
-        for(int i = 0; i < platformList.Length; i++)
-        {
-            platformList[i].gameObject.SetActive(false);
-        }
+        for (int i = 0; i < platformList.Length; i++) platformList[i].gameObject.SetActive(false);
 
         thePlayer.transform.position = playerStartPoint;
         platformGenerator.position = platformStartPoint;
@@ -58,6 +34,17 @@ public class GameManager : MonoBehaviour
         theScoreManager.scoreCount = 0;
         theScoreManager.scoreIncreasing = true;
     }
+
+    // Start is called before the first frame update
+    private void Start() {
+        platformStartPoint = platformGenerator.position;
+        playerStartPoint = thePlayer.transform.position;
+
+        theScoreManager = FindObjectOfType<ScoreManager>();
+    }
+
+    // Update is called once per frame
+    private void Update() { }
 
     /*public IEnumerator RestartGameCo()
     {

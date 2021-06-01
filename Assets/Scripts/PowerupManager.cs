@@ -1,10 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PowerupManager : MonoBehaviour
-{
-
+public class PowerupManager : MonoBehaviour {
     private bool doublePoints;
     private bool safeMode;
 
@@ -18,44 +14,7 @@ public class PowerupManager : MonoBehaviour
     private float normalPointsPerSecond;
     private float spikeRate;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        theScoreManager = FindObjectOfType<ScoreManager>();
-        thePLatformGenerator = FindObjectOfType<PlatformGenerator>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if(powerupActive)
-        {
-            powerupLengthCounter -= Time.deltaTime;
-
-            if(doublePoints)
-            {
-                theScoreManager.pointsPerSecond = normalPointsPerSecond * 2;
-                theScoreManager.shouldDouble = true;
-            }
-
-            if(safeMode)
-            {
-                thePLatformGenerator.randomSpikeThreshold = 0;
-            }
-
-            if(powerupLengthCounter <= 0)
-            {
-                theScoreManager.pointsPerSecond = normalPointsPerSecond;
-                theScoreManager.shouldDouble = false;
-
-                thePLatformGenerator.randomSpikeThreshold = spikeRate;
-                powerupActive = false;
-            }
-        }
-    }
-
-    public void ActivatePowerup(bool points, bool safe, float time)
-    {
+    public void ActivatePowerup(bool points, bool safe, float time) {
         doublePoints = points;
         safeMode = safe;
         powerupLengthCounter = time;
@@ -64,5 +23,33 @@ public class PowerupManager : MonoBehaviour
         spikeRate = thePLatformGenerator.randomSpikeThreshold;
 
         powerupActive = true;
+    }
+
+    // Start is called before the first frame update
+    private void Start() {
+        theScoreManager = FindObjectOfType<ScoreManager>();
+        thePLatformGenerator = FindObjectOfType<PlatformGenerator>();
+    }
+
+    // Update is called once per frame
+    private void Update() {
+        if (powerupActive) {
+            powerupLengthCounter -= Time.deltaTime;
+
+            if (doublePoints) {
+                theScoreManager.pointsPerSecond = normalPointsPerSecond * 2;
+                theScoreManager.shouldDouble = true;
+            }
+
+            if (safeMode) thePLatformGenerator.randomSpikeThreshold = 0;
+
+            if (powerupLengthCounter <= 0) {
+                theScoreManager.pointsPerSecond = normalPointsPerSecond;
+                theScoreManager.shouldDouble = false;
+
+                thePLatformGenerator.randomSpikeThreshold = spikeRate;
+                powerupActive = false;
+            }
+        }
     }
 }

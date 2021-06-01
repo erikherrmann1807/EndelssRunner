@@ -1,10 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class pickUpPoints : MonoBehaviour
-{
-
+public class pickUpPoints : MonoBehaviour {
     public int scoreToGive;
 
     private ScoreManager theScoreManager;
@@ -12,34 +8,27 @@ public class pickUpPoints : MonoBehaviour
     private AudioSource coinSound;
 
     // Start is called before the first frame update
-    void Start()
-    {
+    private void Start() {
         theScoreManager = FindObjectOfType<ScoreManager>();
 
-        coinSound = GameObject.Find ("CoinSound").GetComponent<AudioSource>();
+        coinSound = GameObject.Find("CoinSound").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    private void Update() { }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.gameObject.name == "Player")
-        {
+    private void OnTriggerEnter2D(Collider2D other) {
+        if (other.gameObject.name == "Player") {
             theScoreManager.AddScore(scoreToGive);
             gameObject.SetActive(false);
 
-            if(coinSound.isPlaying)
-            {
+            if (coinSound.isPlaying) {
                 coinSound.Stop();
                 coinSound.Play();
-            }else {
-
-            coinSound.Play();
             }
-        }   
+            else {
+                coinSound.Play();
+            }
+        }
     }
 }
