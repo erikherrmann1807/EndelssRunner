@@ -7,9 +7,14 @@ public class pickUpPoints : MonoBehaviour {
 
     private AudioSource coinSound;
 
+    private PowerUps myPowerUps;
+
     // Start is called before the first frame update
     private void Start() {
         theScoreManager = FindObjectOfType<ScoreManager>();
+        myPowerUps = FindObjectOfType<PowerUps>();
+        
+        scoreToGive *= myPowerUps.multiplier;
 
         coinSound = GameObject.Find("CoinSound").GetComponent<AudioSource>();
     }

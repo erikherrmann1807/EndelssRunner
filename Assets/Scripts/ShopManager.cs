@@ -5,6 +5,7 @@ public class ShopManager : MonoBehaviour {
 
     public int bankBalance;
     public Text bankBalanceText;
+    public PowerUps myPowerUps;
     
     // Start is called before the first frame update
     private void Start() {
@@ -16,6 +17,7 @@ public class ShopManager : MonoBehaviour {
         if (bankBalance >= itemPrice) {
             Debug.Log("Item wurde gekauft!");
             //Add PowerUp
+            myPowerUps.CoinMultiplier();
             //calculate new bank balance
             bankBalance -= itemPrice;
             //refresh bank balance(text)
