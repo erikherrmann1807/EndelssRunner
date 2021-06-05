@@ -3,11 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="932b1351-b680-4abb-b892-a253d8f3689f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EndelssRunner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EndelssRunner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Coin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Coin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PowerUps.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PowerUps.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShopManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShopManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShopSelector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShopSelector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/pickUpPoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/pickUpPoints.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/pickUpPoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CoinPickUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/pickUpPoints.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CoinPickUp.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +30,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ShopManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/pickUpPoints.cs" />
+      <option value="$PROJECT_DIR$/Assets/Coin.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CoinPickUp.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1qIBlOyKh1OkhXlRg6cPm43zQUn" />
@@ -86,6 +88,7 @@
       <updated>1616757377241</updated>
       <workItem from="1616757382534" duration="59000" />
       <workItem from="1622555608013" duration="3395000" />
+      <workItem from="1622813709476" duration="5156000" />
     </task>
     <servers />
   </component>
