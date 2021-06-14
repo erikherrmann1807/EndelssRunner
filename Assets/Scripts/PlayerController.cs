@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
+
     public float moveSpeed;
     public float speedMultiplier;
     public float speedIncreaseMilestone;
@@ -28,9 +29,7 @@ public class PlayerController : MonoBehaviour {
     private bool canDoubleJump;
 
     private Rigidbody2D myRigidbody;
-
-    //private Collider2D myCollider;
-
+    
     private Animator myAnimator;
 
     // Start is called before the first frame update
@@ -104,7 +103,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
-        if (other.gameObject.tag == "killbox") {
+        if (other.gameObject.CompareTag("killbox")) {
             theGameManager.RestartGame();
             moveSpeed = moveSpeedStore;
             speedMilestoneCount = speedMilestoneCountStore;

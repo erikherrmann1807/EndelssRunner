@@ -3,11 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="932b1351-b680-4abb-b892-a253d8f3689f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EndelssRunner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EndelssRunner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Coin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Coin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Slippy.physicsMaterial2D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Slippy.physicsMaterial2D.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Platform_3x1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Platform_3x1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Platform_5x1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Platform_5x1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Platform_7x1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Platform_7x1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Platform_9x1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Platform_9x1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/pickUpPoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CoinPickUp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/pickUpPoints.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CoinPickUp.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CoinPickUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CoinPickUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,13 +24,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JumpParticle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShopManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShopSelector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99D9AB48-AE7D-46A6-AD56-DF1D8D1589ED/95/82dabf07/AudioSource.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ShopSelector.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps.cs" />
@@ -32,6 +38,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/pickUpPoints.cs" />
       <option value="$PROJECT_DIR$/Assets/Coin.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CoinPickUp.cs" />
+      <option value="$PROJECT_DIR$/Assets/JumpParticle.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/JumpParticle.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1qIBlOyKh1OkhXlRg6cPm43zQUn" />
@@ -89,6 +98,7 @@
       <workItem from="1616757382534" duration="59000" />
       <workItem from="1622555608013" duration="3395000" />
       <workItem from="1622813709476" duration="5156000" />
+      <workItem from="1623244861215" duration="2079000" />
     </task>
     <servers />
   </component>

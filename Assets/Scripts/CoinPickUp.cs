@@ -24,7 +24,7 @@ public class CoinPickUp : MonoBehaviour {
         _myPowerUps = FindObjectOfType<PowerUps>();
         _coinText = GameObject.Find("CoinText").GetComponent<Text>();
         
-        scoreToGive *= _myPowerUps.multiplier;
+        //scoreToGive *= _myPowerUps.multiplier;
 
         _coinSound = GameObject.Find("CoinSound").GetComponent<AudioSource>();
     }
